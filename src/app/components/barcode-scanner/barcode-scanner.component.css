@@ -1,0 +1,30 @@
+.container {
+    max-height: 1vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(236, 240, 252);
+    margin-top: 10px;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(112, 145, 216);
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header button {
+    margin-left: 20px;
+}
+
+header h1 {
+    margin: 20px;
+}
