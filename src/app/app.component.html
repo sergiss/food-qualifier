@@ -1,0 +1,12 @@
+<div class="container">
+    <app-barcode-scanner
+    *ngIf="!barcode; else showProduct"
+    (setBarcode)="setBarcode($event)"
+    ></app-barcode-scanner>
+    <ng-template #showProduct>
+    <app-product (scan)="scan()" [product]="product"></app-product>
+    </ng-template>
+    <a href="https://github.com/sergiss/food-qualifier" target="_blank">
+        &copy;<script>document.write(new Date().getFullYear())</script> Sergio Soriano
+    </a>
+</div>

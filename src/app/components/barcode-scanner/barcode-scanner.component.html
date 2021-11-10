@@ -1,0 +1,11 @@
+<div class="container">
+  <header>
+    <h1>Barcode Scanner</h1>
+  </header>
+  <barcode-scanner-livestream
+    type="{{ type }}"
+    (valueChanges)="onValueChanges($event)"
+    (started)="onStarted($event)"
+  ></barcode-scanner-livestream>
+  <h2 *ngIf="connecting" class="message">Connecting with the camera...</h2>
+</div>
