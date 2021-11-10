@@ -23,7 +23,7 @@ export class BarcodeScannerComponent implements AfterViewInit , OnInit {
   ngOnInit(): void {
     this.barcode = '';
     this.connecting = true;
-    // this.setBarcode.next('8480000340795');
+    //this.setBarcode.next('8480000340795');
   }
 
   ngAfterViewInit() {
