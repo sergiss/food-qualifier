@@ -1,9 +1,0 @@
-<div class="container">
-    <app-barcode-scanner
-    *ngIf="!barcode; else showProduct"
-    (setBarcode)="setBarcode($event)"
-    ></app-barcode-scanner>
-    <ng-template #showProduct>
-    <app-product (scan)="scan()" [product]="product"></app-product>
-    </ng-template>
-</div>
